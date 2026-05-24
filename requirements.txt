@@ -1,0 +1,15 @@
+faster-whisper>=1.0.0
+sounddevice>=0.4.6
+PyGObject>=3.0.0
+pynput>=1.7.6
+evdev>=1.6.0
+python-xlib>=0.33
+pyperclip>=1.8.2
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# CUDA runtime libraries for GPU inference (~1.4 GB). ctranslate2 dlopens these
+# by SONAME; transcriber.py preloads them from site-packages at import time.
+nvidia-cublas-cu12
+nvidia-cudnn-cu12
+
